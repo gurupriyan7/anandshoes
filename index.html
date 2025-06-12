@@ -8,6 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -51,7 +53,7 @@
 						Trolleys | Wallets | Belts</p>
 
 					<p data-scrollax="properties: { translateY: '30%', opacity: 2.5}"><a href="services.html"
-							class="btn btn-white btn-outline-white px-4 py-3">View Our Services</a></p>
+							class="btn btn-white btn-outline-white px-4 py-3">View Our Brands</a></p>
 				</div>
 			</div>
 		</div>
@@ -70,9 +72,9 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-					<li class="nav-item"><a href="work.html" class="nav-link">Works</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="services.html" class="nav-link">Brands</a></li>
+					<li class="nav-item"><a href="work.html" class="nav-link">Gallery</a></li>
+					<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
@@ -85,20 +87,24 @@
 			<div class="row">
 				<div class="col-md-4 ftco-animate">
 					<div class="media d-block text-center block-6 services">
-						<div class="icon d-flex mb-3"><span class="flaticon-facial-treatment"></span></div>
+						<div class="icon d-flex mb-3" style="justify-content: center;">
+							<i class="fas fa-person-dress" style="font-size: 40px; color: #d63384;"></i>
+						</div>
 						<div class="media-body">
 							<h3 class="heading">For Ladies – Style Meets Comfort</h3>
 							<p>At Anand Shoes & Bags, the best footwear shop in Cherthala, we offer a premium selection
 								of branded ladies’ shoes, handbags, purses, travel trolleys, and college bags — all
 								crafted for modern women who value style and quality.
-
 							</p>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4 ftco-animate">
 					<div class="media d-block text-center block-6 services">
-						<div class="icon d-flex mb-3"><span class="flaticon-cosmetics"></span></div>
+						<div class="icon d-flex mb-3" style="justify-content: center;">
+							<i class="fas fa-user-tie" style="font-size: 40px; color: #0d6efd;"></i>
+						</div>
 						<div class="media-body">
 							<h3 class="heading">For Gents – Premium Brands</h3>
 							<p>Gentlemen can choose from a wide range of branded formal and casual shoes, leather belts,
@@ -107,16 +113,20 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4 ftco-animate">
 					<div class="media d-block text-center block-6 services">
-						<div class="icon d-flex mb-3"><span class="flaticon-curl"></span></div>
+						<div class="icon d-flex mb-3" style="justify-content: center;">
+							<i class="fas fa-shoe-prints" style="font-size: 40px; color: #f39c12;"></i>
+						</div>
 						<div class="media-body">
 							<h3 class="heading">For Kids – Comfort, Quality & Fun</h3>
-							<p>Transform your look with professional hairstyling, tailored to suit your personality and
-								enhance your unique charm.</p>
+							<p>Explore a delightful collection of kids’ shoes, backpacks, and accessories — crafted for
+								active little feet with playful designs and trusted quality.</p>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -187,15 +197,16 @@
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-discount img" style="background-image: url(images/new_image/offer_bg.png.png);">
+	<section class="ftco-section ftco-discount img" style="background-image: url(images/new_image/count_img1.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row justify-content-end">
 				<div class="col-md-5 discount ftco-animate">
 					<h3>Save up to 60% Off</h3>
 					<h2 class="mb-4">Back To School</h2>
-					<p class="mb-4">Shop premium school bags at up to 60% off — built to last all year long.</p>
-					<p><a href="#" class="btn btn-white btn-outline-white px-4 py-3">Book Now</a></p>
+					<p style="color: white;" class="mb-4">Shop premium school bags at up to 60% off — built to last all
+						year long.</p>
+					<p><a href="contact.html" class="btn btn-white btn-outline-white px-4 py-3">Book Now</a></p>
 				</div>
 			</div>
 		</div>
@@ -286,7 +297,8 @@
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
+	<section class="ftco-section ftco-counter img" id="section-counter"
+		style="background-image: url(images/new_image/bg_main1.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row justify-content-center">
@@ -359,22 +371,37 @@
 				</div>
 				<div class="col-md-6 appointment pl-md-5 ftco-animate">
 					<h3 class="mb-3">Let's connect</h3>
-					<form action="#" class="appointment-form">
+					<div id="successMessage" style="display: none;" class="alert alert-success text-center">
+						Thank you! Your message has been successfully sent. We will get back
+						to you soon.
+					</div>
+					<form id="contactform" class="appointment-form">
 						<div class="row form-group d-flex">
 							<div class="col-md-6">
-								<input type="text" class="form-control" placeholder="Name">
+								<input id="name" name="name" class="form-control" placeholder="Name">
 							</div>
 							<div class="col-md-6">
-								<input type="text" class="form-control" placeholder="Email">
+								<input name="email" id="email" type="email" class="form-control" placeholder="Email">
+							</div>
+						</div>
+						<div class="row form-group d-flex">
+							<div class="col-md-6">
+								<input name="phone" id="phone" type="text" class="form-control"
+									placeholder="PhoneNumber">
 							</div>
 						</div>
 
 						<div class="form-group">
-							<textarea name="" id="" cols="30" rows="3" class="form-control"
+							<textarea name="message" id="message" cols="30" rows="3" class="form-control"
 								placeholder="Message"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="submit" class="btn btn-white btn-outline-white py-3 px-4">
+							<button id="s-btn" type="submit" class="btn btn-white btn-outline-white py-3 px-4">Send
+								Message</button>
+							<span id="loading" style="display: none;">Submitting...</span>
+							<div id="successMessage" style="display:none; color:green; margin-top: 10px;">Message sent
+								successfully!
+							</div>
 						</div>
 					</form>
 				</div>
@@ -394,10 +421,10 @@
 							quality, variety, and style for men, women, and kids. Known for exceptional service and a
 							wide collection, we're open all days to serve you better.</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a target="_blank" href="https://g.co/kgs/obS63v4"><span
+							<li class="ftco-animate"><a target="_blank" href="https://g.co/kgs/vVSVB7o"><span
 										class="icon-google"></span></a></li>
 							<li class="ftco-animate"><a target="_blank"
-									href="https://www.facebook.com/share/17w2TSzypF/?mibextid=LQQJ4d"><span
+									href="https://www.instagram.com/anandshoesandbags?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span
 										class="icon-facebook"></span></a></li>
 							<li class="ftco-animate"><a target="_blank"
 									href="https://www.instagram.com/anandshoesandbags?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span
@@ -433,9 +460,9 @@
 						<ul class="list-unstyled">
 							<li><a href="home.html" class="py-2 d-block">Home</a></li>
 							<li><a href="about.html" class="py-2 d-block">About</a></li>
-							<li><a href="services.html" class="py-2 d-block">Services</a></li>
-							<li><a href="work.html" class="py-2 d-block">Works</a></li>
-							<li><a href="blog.html" class="py-2 d-block">Blog</a></li>
+							<li><a href="services.html" class="py-2 d-block">Brands</a></li>
+							<li><a href="work.html" class="py-2 d-block">Gallery</a></li>
+							<!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li> -->
 							<li><a href="contact.html" class="py-2 d-block">Contact</a></li>
 						</ul>
 					</div>
@@ -445,7 +472,8 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">K S R T C, BUS STAND, NEAR, near Girls high school, Cherthala, Kerala 688524</span></li>
+								<li><span class="icon icon-map-marker"></span><span class="text">K S R T C, BUS STAND,
+										NEAR, near Girls high school, Cherthala, Kerala 688524</span></li>
 								<li><a href="callto:+917034505303"><span class="icon icon-phone"></span><span
 											class="text">+91 96 33 707070</span></a></li>
 								<li><a href="mailto:poxyluxesalon@gmail"><span class="icon icon-envelope"></span><span
@@ -477,6 +505,38 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 		</svg></div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#contactform').submit(function (e) {
+				e.preventDefault(); // 🔒 Prevent form reload
+
+
+				const btn = $('#s-btn');
+				btn.prop('disabled', true).text('Submitting...');
+
+				$.ajax({
+					url: 'https://script.google.com/macros/s/AKfycbx9xi7HlvIfXOvrpJgIPi4Dz0PKFwozoBWphETpYAiJE_WeY3CAEbLpCYXW-vZJpX5NBQ/exec',
+					method: 'POST',
+					data: $(this).serialize(),
+					success: function (response) {
+						document.getElementById("successMessage").style.display = "block"
+						setTimeout(() => {
+							document.getElementById("successMessage").style.display = "none"
+						}, 3000)
+						$('#contactform')[0].reset();
+						btn.prop('disabled', false).text('Send Message');
+					},
+					error: function () {
+						alert("Submission failed. Try again.");
+						btn.prop('disabled', false).text('Send Message');
+					}
+				});
+			});
+		});
+	</script>
 
 
 	<script src="js/jquery.min.js"></script>
